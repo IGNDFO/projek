@@ -1,4 +1,4 @@
-
+/* 
 body{
     background-color:#b87ae1;
     font-size: medium;
@@ -20,7 +20,7 @@ h4{
 .p{
     background-color: rgb(228, 204, 168);
     font-size: 100dp;
-}
+} */
 .top{
     background-color: rgb(144, 248, 231);
 }
@@ -47,7 +47,7 @@ li{
     padding-inline: 20px;
 }
 
-th{
+/* th{
     color: white;
     background-color: black;
 }
@@ -55,4 +55,4 @@ td{
 
     color: yellow;
     background-color: violet;
-}
+} */

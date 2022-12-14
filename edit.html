@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class=" container  ">
+        <div class="row ">
+            <div class=" col-lg-6 ">
+                <h2> Form User</h2>
+                <div id="alert"></div>
+                <div class="form-grup col-lg-6 col-sm-6 col-xs-6">
+                    <label> EMAIL</label>
+                    <input type="text"  id="email" name="email"class="form-control " placeholder="Masukan Email yang Bisa dihubungi">
+                    <br>
+                    <label> NAME</label>
+                    <input type="text"  id="nama" name="name"class="form-control" placeholder="Masukan Nama">
+                    <br>
+                    <label> Gender</label>
+                    <input type="text"  id="gender" name="gender"class="form-control error()"   placeholder="Laki-Laki / Perempuan">
+                    <br>
+                    <label> Alamat</label>
+                    <input type="text"  id="alamat" name="alamat"class="form-control "   placeholder="Masukan Alamat">
+                    
+                    <br>
+                    <label>Tempat Lahir</label>
+                    <input type="text" class="form-control error()" id="tempat_L" placeholder="Masukan Tempat Lahir">
+                    <br>
+                    <label>Tanggal Lahir</label>
+                    <input type="date" class="form-control error()" name="tanggal_lahir" id="tanggal_L" placeholder="DD-MM-YYYY">
+                    <br>
+                    <label> NIK</label>
+                    <input type="number"  id="nik" name="nik"class="form-control error()" placeholder="Masukan NIK">
+                    <br>
+                    <label>Asal Sekolah Menengah Atas</label>
+                    <input type="text" id="asal" name="asal sma" class="form-control error()" placeholder="Masukan Asal Sekolah Menengah Atas">
+                    <br>
+                    <label>Jalur Pendaftaran</label>
+                    <input type="text" id="j_pendaftaran" name="jalur_pendaftaran" placeholder="Tanpa Test / Test" class="form-control error()">
+                    <br>
+                    <!-- <label>Upload Nilai Rapot (Semester 1 sampai 5)</label>
+                    <input type="file" id="N_rapot" name="nilai" capture="user" accept="image/*">
+                 -->
+                </div>
+            </form>
+                <br>
+                <button class="btn btn-primary" onclick="simpan() "  id="btnsave">SAVE</button >
+                <button class="btn btn-primary" type="reset" onclick="Reset()" id="btnreset">RESET</button>
+            </div>
+            
+            <div class="col-lg-4" >
+<h2> list user</h2>
+        
+<table  border="1" class="table table-hover ">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Nama Mahasiswa</th>
+            <th>Gender</th>
+            <th>Alamat</th>
+            <th>Tempat Lahir</th>
+            <th>Tanggal Lahir</th>
+            <th>NIK</th>
+            <th>Asal SMA</th>
+            <th>Jalur Pendaftaran</th>
+        </tr>
+    </thead>
+    <tbody id="tblmhs"></tbody>
+    <script src="API.js"></script>
+</table>
+
+    
+</div>
+</div>
+    
+</body>
+</html>
+
+
